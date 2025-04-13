@@ -82,7 +82,7 @@ const Calendar = () => {
 
   return (
     <DndProvider backend={HTML5Backend}>
-      <div className="flex h-screen">
+      <div className="flex ">
         <Sidebar />
         <div className="flex-1 flex flex-col">
           <div className="flex items-center justify-between p-4 border-b">
@@ -98,7 +98,7 @@ const Calendar = () => {
                   <ChevronRight className="h-4 w-4" />
                 </Button>
               </div>
-              <h2 className="text-xl font-semibold">
+              <h2 className="text-xl font-semibold md:block hidden">
                 {format(days[0], "MMMM d")} - {format(days[6], "MMMM d, yyyy")}
               </h2>
             </div>
